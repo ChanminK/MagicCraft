@@ -1,0 +1,78 @@
+GET THE ASSET FILES:
+SFX:
+    fah.mp3
+    coinflip.mp3
+    hakari.mp3
+    luigispeak.mp3
+    AUGH.mp3
+    Pepsiman.mp3
+    tiktok.mp3
+    Rewind.mp3
+    beeping.mp3
+    yell.mp3
+    slurp.mp3
+    AHHH.mp3
+    crying.mp3
+    throw.mp3
+    explosion.mp3
+
+
+PNG
+    ENVIRONMENT
+        background.png               # castle/dungeon wall
+        cauldron_1.png               # idle pot
+        cauldron_2.png               # bubbling variant 1
+        cauldron_3.png               # bubbling variant 2
+        bubbles_green.png
+        bubbles_redwhiteblue.png
+        bubbles_nature.png
+    SHELVES
+        BuffShelf.png
+        HealShelf.png
+        AttackShelf.png
+    TEACHER SPRITES
+        teacher.png
+        teacherdrink.png
+        teachervigor.png
+        teachercry.png
+        teacherthrow.png
+        teachersuprise.png
+        teacherhuh.png
+
+    INGREDIENTS:
+    
+    BUFF
+        unicorn-horn.png
+        ragebaiter-jam.png
+        writers-block.png
+        inspirational-quote.png
+        pixie-dust.png
+        gamblers-vigor.png
+
+    HEAL
+        magical-wand.png
+        toads-tongue.png
+        grandmas-lasagna.png
+        saints-drink.png            # Pepsi 
+        angels-feather.png
+        time-watch.png
+
+    ATTACK
+        dragons-tooth.png
+        cursed-orb.png
+        fahhhh-jar.png
+        c4.png
+        crystalized-thunder.png
+        angry-moss.png
+
+    UI
+        dialog-box.png
+        button.png
+        icon_next.png
+        icon_prev.png
+        icon_done.png
+        icon_retry.png
+
+    FONTS
+        retro_font.ttf
+        magic_font.ttf

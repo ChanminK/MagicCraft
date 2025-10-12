@@ -1,0 +1,8 @@
+node_modules
+dist
+.vercel
+.DS_Store
+.env
+
+
+#I was about to commit like 5K lines.. Whew
