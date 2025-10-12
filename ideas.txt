@@ -1,6 +1,206 @@
 NOT MINECRAFT GOSH DARN IT
 
+Okay but Potion == Magic?
+YUP They do weird things so its similar ig 
 
-Potion/spell crafting game?
+Probably gonnna be a vercel-deployed site tbh
 
-Similar to Neal.fun and his games 
+Two sides:
+Left will have pot that is boiling(shifting between images or maybe just a side view with bubbles slowing rising)
+
+Right will have a group of ingredients that are, you guessed it - MAGICAL
+2x3 grid on the right(self?) that you can switch between
+    Get an area by the bottom where you can press next or before
+    Each set of 6 ingredients have some kind of theme 
+
+Now I wanna get art for this but clip studio hackatime ain't supported...
+ASK @Olive or @oneforfreedom if anything can be done
+
+Ingredient list:
+
+Buff:
+    Unicorn horn
+    Ragebaiter Jam (Jam with rage meme face on it)
+    Writer's block (literal block that says writer on it)
+    Inspirational quote (sheet of paper)
+    Pixie dust (in a pouch)
+    Gambler's vigor (coin)
+
+Heal:
+    Magical wand
+    Toad's tounge
+    Grandma's Lasagna(Whole pot)
+    Dr. Pepper (can)
+    Angel's feather
+    Time (watch)
+
+
+Attack:
+    Dragon's tooth
+    Cursed orb
+    FAHHHH (use fah mp3 when you use it, in a jar)
+    C4
+    Crytalized thunder (Thunder in crystal)
+    Angry moss(Moss with an angry face)
+
+
+Game:
+You are at your final potion making exam for school, and must pass making three different potions.
+    Maybe have teacher be an active participant in this?
+You have 3 min to make each potion
+
+Potion 1:
+Potion of Vigor
+    Gambler's vigor
+    Inspirational quote
+    Ragebaiter Jam
+Steps:
+    First get Gambler's Vigor and flip it into the cauldron (Get the coin and right click it to flip it and make it fall in, play coinflip.mp3 as a coin flip sound)
+    Green bubbles(circles) will start to float up
+    You will hear hakari.mp3 at 10% volume
+    Next get the inspirational quote and let the words flow(Grab the paper and slowly lower it into the water)
+    Then you will hear luigi speak mp3 at 20% volume
+    Finally drop the jam of the ragebaiters into the mix(Get ragebaiter jam, YOU HAVE TO DROP IT into the cauldron)
+    hear AUGH.mp3 at normal volume
+    Slightly transparent img of ahh.png floats from the cauldron
+    Press done
+
+Potion 2:
+Potion that heals my broken heart
+    Saint's drink (Pepsi)
+    Time(watch)
+    Grandma's Lasagna
+Steps:
+    Pour the drink of saints into the cauldron. Then put in the container. (Get pepsi and press alt + tip it left or right to pour all of it into the cauldron, then put the can in)
+    Pepsiman.mp3 plays at 30% volume
+    Red white and blue bubbles start rising
+    Then use time to get to the past. (get the watch and right click it. when right clicked, tiktok.mp3 will start playing. Then add it into the cauldron)
+    Rewind.mp3 plays 
+    Screen becomes black and white
+    Finally, add color with one who was always there (add Grandma's Lasagna)
+    Color returns back to normal
+    Press done
+
+Potion 3:
+Potion of EXPLOSION
+    C4
+    Angry moss
+    FAHHHH
+Steps:
+    Slowly lower the anger of the gods (take C4 and slowly lower it into the pot. while you touch it play beeping.mp3 until its in the cauldron. if the speed of it is more than x, make it explode/play bad ending sequence)
+    Stop hearing the beeps
+    The ever lasting anger of nature will be added (take angry moss, play yell.mp3 when you pick it up. Make it be dropped automatically every 2 seconds)
+    yelling stops
+    green/nature colored bubbles will start rising
+    At last, add the sound that started it all (take FAHHHH and put it into the cauldron)
+    Hear FAH.mp3 at 100% volume
+    Press done
+
+Start:
+Teacher.png in on screen, black background behind
+Below is text box explaining how this is gonna work(in lore terms)
+
+*small bounce when switching between teacher pngs
+After potion 1:
+some comment about the potion(what its supposed to do, taste, etc)
+teacherdrink.png(slurp.mp3)
+teachervigor.png(AHHH.mp3)
+says how they feel great now
+full marks
+time for the next potion, [potion2name]
+
+After potion 2:
+some comment about the potion(what its supposed to do, taste, etc)
+teacherdrink.png(slurp.mp3)
+teachercry.png(crying.mp3)
+says this potion wokrs and that their broken heart is now fixed
+says it's time for the final potion: [Potion3name]
+
+After potion 3:
+some comment about the potion(what its supposed to do, taste, etc)
+teacherthrow.png(throw.mp3)
+teachersuprise.png(explosion.mp3) + screenshake
+teacherhuh.png
+It works!
+You've passed congrats
+[play win scene]
+
+Loop:
+Create each potion according to the recipe
+Each recipe will have instructions
+    Ingredients needed
+    Method of making
+    End product
+Then teacher reaction
+
+Lose(anytime):
+If you fail to follow the reciepe at any given point it will immediatly explode 
+Then get game over screen
+Screen turns black
+Big white words in the middle saying "GAME OVER"
+Underneath smaller text saying "Try again?"
+Two buttons under that:
+    Try from the Start(takes you back to potion 1)
+    Try from Potion [number of potion you are at]
+
+Win(final):
+[Black screen with white text]
+You've passed your exam!
+Great!
+
+below in small white text: thanks for playing!
+
+FOR NOW MAKE ASSETS
+List of assets to draw/get:
+
+SFX:
+fah.mp3
+coinflip.mp3
+hakari.mp3
+luigispeak.mp3
+AUGH.mp3 (ragebait)
+Pepsiman.mp3
+tiktok.mp3
+Rewind.mp3
+beeping.mp3
+yell.mp3 (parents fighting?)
+slurp.mp3
+AHHH.mp3 (vigor)
+crying.mp3
+throw.mp3
+explosion.mp3
+
+PNG:
+_list them here_
+
+Drawing from Clip Studio:
+    Cauldron (Side view only)
+    Background (castle/dungeon stone)
+    BuffShelf (2x3 grid) centered around buffs
+    HealShelf (2x3 grid) centered around heals
+    AttackShelf (2x3 grid) centered around attacks
+    Teacher expressions:
+        teacher.png
+        teacherdrink.png
+        teachervigor.png
+        teachercry.png
+        teacherthrow.png
+        teachersuprise.png
+        teacherhuh.png
+    All of the ingredients(make sure to keep them in the same size/ratio)
+
+Setup:
+Make each part a scene
+    Intro
+    Potion1
+    Potion2
+    Potion3
+    Lose 
+    Win 
+
+Reach:
+
+Freeplay:
+    Have 18 ingreidents and you can combine them all
+
+
