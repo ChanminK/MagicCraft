@@ -1,21 +1,25 @@
 GET THE ASSET FILES:
 SFX:
-    fah.mp3
-    coinflip.mp3
-    hakari.mp3
-    luigispeak.mp3
-    AUGH.mp3
-    Pepsiman.mp3
-    tiktok.mp3
-    Rewind.mp3
-    beeping.mp3
-    yell.mp3
-    slurp.mp3
-    AHHH.mp3
-    crying.mp3
-    throw.mp3
-    explosion.mp3
+    fah.mp3 - done 
+    coinflip.mp3 - done
+    hakari.mp3 - done
+    luigispeak.mp3 - done
+    AUGH.mp3 - done
+    Pepsiman.mp3 - done
+    tiktok.mp3 - done
+    Rewind.mp3 - done
+    beeping.mp3 - done
+    yell.mp3 - done
+    slurp.mp3 - done
+    AHHH.mp3 - done
+    crying.mp3 - done
+    throw.mp3 - cut up the mp3 file to get the specific SFX out of the ones given(like 5 idk)
+    explosion.mp3 - done
 
+IF I HAVE TIME GO BACK AND RE-EDIT SFX FOR DEADTIME
+
+I swear I need to make a yt backend plugin or smth I swear
+But then again youtube is so very stingy on doing that stuff...
 
 PNG
     ENVIRONMENT
@@ -26,18 +30,20 @@ PNG
         bubbles_green.png
         bubbles_redwhiteblue.png
         bubbles_nature.png
-    SHELVES
-        BuffShelf.png
-        HealShelf.png
-        AttackShelf.png
-    TEACHER SPRITES
-        teacher.png
-        teacherdrink.png
-        teachervigor.png
-        teachercry.png
-        teacherthrow.png
-        teachersuprise.png
-        teacherhuh.png
+    
+    SHELVES - Put a sign on the top, add little details maybe?
+        BuffShelf.png - Buff + arm flexing
+        HealShelf.png - Heal + +(red plus) symbols
+        AttackShelf.png - Attack + sword
+    
+    TEACHER SPRITES - base it off of the lets go gambeling stickfigure bc my art sucks
+        teacher.png - regular one with wizard hat 
+        teacherdrink.png - wizard hat back, potion being drunk
+        teachervigor.png - wizard hat a little back, maybe hikari poze? Or maybe rays of light coming from the eyes
+        teachercry.png - wizard hat about to fall off, two streams of tears running down face
+        teacherthrow.png - Back review, arm is throwing potion (maybe add blur?)
+        teachersuprise.png - wizard but black person with heads on hands
+        teacherhuh.png - maybe like rock sus face?
 
     INGREDIENTS:
     
@@ -53,7 +59,7 @@ PNG
         magical-wand.png
         toads-tongue.png
         grandmas-lasagna.png
-        saints-drink.png            # Pepsi 
+        saints-drink.png    - Pepsi/Pepsiman?
         angels-feather.png
         time-watch.png
 

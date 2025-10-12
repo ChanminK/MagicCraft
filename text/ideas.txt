@@ -103,8 +103,8 @@ Below is text box explaining how this is gonna work(in lore terms)
 *small bounce when switching between teacher pngs
 After potion 1:
 some comment about the potion(what its supposed to do, taste, etc)
-teacherdrink.png(slurp.mp3)
-teachervigor.png(AHHH.mp3)
+teacherdrink.png(slurp.mp3 - roblox slurp)
+teachervigor.png(AHHH.mp3 - someone screaming yeah?) 
 says how they feel great now
 full marks
 time for the next potion, [potion2name]
