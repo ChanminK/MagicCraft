@@ -16,13 +16,13 @@ SFX:
     throw.mp3 - cut up the mp3 file to get the specific SFX out of the ones given(like 5 idk)
     explosion.mp3 - done
 
-IF I HAVE TIME GO BACK AND RE-EDIT SFX FOR DEADTIME
+IF I HAVE TIME GO BACK AND RE-EDIT SFX FOR DEADTIME - GET THROW EDITED AND IN AS SOON AS POSSIBLE
 
 I swear I need to make a yt backend plugin or smth I swear
 But then again youtube is so very stingy on doing that stuff...
 
-PNG
-    ENVIRONMENT
+PNG (Check folder)
+    ENVIRONMENT - essentially background pngs and such 
         background.png               # castle/dungeon wall
         cauldron_1.png               # idle pot
         cauldron_2.png               # bubbling variant 1
@@ -45,17 +45,17 @@ PNG
         teachersuprise.png - wizard but black person with heads on hands
         teacherhuh.png - maybe like rock sus face?
 
-    INGREDIENTS:
+    INGREDIENTS: - MAKE SURE CONSISTANT PIXEL SIZE SO IT WORKS WELL, 720px by 720px?
     
-    BUFF
-        unicorn-horn.png
+    BUFF (In the buff shelf)
+        unicorn-horn.png 
         ragebaiter-jam.png
         writers-block.png
         inspirational-quote.png
         pixie-dust.png
         gamblers-vigor.png
 
-    HEAL
+    HEAL (In the heal shelf)
         magical-wand.png
         toads-tongue.png
         grandmas-lasagna.png
@@ -63,7 +63,7 @@ PNG
         angels-feather.png
         time-watch.png
 
-    ATTACK
+    ATTACK (In the attack shelf)
         dragons-tooth.png
         cursed-orb.png
         fahhhh-jar.png
@@ -71,14 +71,14 @@ PNG
         crystalized-thunder.png
         angry-moss.png
 
-    UI
-        dialog-box.png
-        button.png
-        icon_next.png
-        icon_prev.png
-        icon_done.png
-        icon_retry.png
+    UI - various little places its used
+        dialog-box.png - Black box(for now, possibly do fancy styling later). Make it bottom 1/3 of the screen
+        button.png - Button background for the icon_done button 
+        icon_next.png - Button to press next shelf of ingredients
+        icon_prev.png - Button to press to get previous shelf of ingredients 
+        icon_done.png - button to be done with the potion making process
+        icon_retry.png - button for when you fail and get the lose screen
 
-    FONTS
-        retro_font.ttf
+    FONTS - maybe do, depending on how regular text looks like
+        retro_font.ttf 
         magic_font.ttf
