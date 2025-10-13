@@ -1,0 +1,9 @@
+QUICK RUNDOWN ON HOW VITE AND HOW TO RUN THIS 
+
+Get node, npm install and get depedencies
+then run:
+    npm run dev
+LIKE THE SLACK BOT??
+Gives localhost link to test the thing 
+
+Github apparently had support for vercel, check later 

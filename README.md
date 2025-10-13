@@ -1,8 +1,9 @@
-# MAGIC CRAFT
+# MAGIC CRAFT / POTION MAKER
 Siege Week 6 Project: Potion Maker!
 
-It's time for you finally take your final exam of magic school: POTIONS!
-Make three super difficult potions and pass your exam!
+It's time for your final exam of magic school: Potions!
+
+Brew three difficult potions within the time limit to pass.
 
 Another
 ![S](https://img.shields.io/badge/S-blue?style=for-the-badge)
@@ -12,7 +13,7 @@ Another
 ![e](https://img.shields.io/badge/e-green?style=for-the-badge)
 Project!
 
-Check out the demo link to try out the project!
+Check out the demo link at the top right try out the project! (Or right here below: )
 
 __________________________________________________________________________
 DEMO VID:
