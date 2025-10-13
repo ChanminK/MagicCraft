@@ -1,5 +1,7 @@
 import { useGame } from "@/state/gameState";
+
 import Intro from "@/scenes/Intro";
+import PotionVigor from "@/scenes/PotionVigor";
 
 export default function SceneManager() {
     const { scene } = useGame();

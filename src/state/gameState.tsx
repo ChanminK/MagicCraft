@@ -1,4 +1,5 @@
-import React, { createContext, useContext, useMemo, useState } from "react";
+import React, { createContext, useContext, useEffect, useMemo, useState } from "react";
+import { loadProgress, saveProgress } from "@/systems/save";
 
 export type SceneId =
     | "Intro"
@@ -22,8 +23,25 @@ let countdownId: number | null = null;
 
 
 export function GameProvider({ children }: { children: React.ReactNode }) {
+    const saved = loadProgress();
     const [scene, setScene] = useState<SceneId>("Intro");
     const [timer, setTimer] = useState(0);
+
+    useEffect(() => {
+        saveProgress({ scene });
+        if (countdownId) {
+            window.clearInterval(countdownId);
+            countdownId = null;
+            setTimer(0);
+        }
+    }, [scene]);
+
+    useEffect(() => {
+        return () => {
+            if (countdownId) window.clearInterval(countdownId);
+            countdownId = null;
+        };
+    }, []);
 
     const startCountdown = (secs: number) => {
         if (countdownId) window.clearInterval(countdownId);
