@@ -23,7 +23,6 @@ Tech Stack:
 
 
 Psst...
-
 <details><summary>hmmmm....</summary>
 Maybe if you add C4, FAH, and ragebait jam, something will happen?
 </details>
