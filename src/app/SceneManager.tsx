@@ -2,26 +2,35 @@ import { useGame } from "@/state/gameState";
 
 import Intro from "@/scenes/Intro";
 import PotionVigor from "@/scenes/PotionVigor";
+import PotionHeal from "@/scenes/PotionHeal";
+import PotionExplosion from "@/scenes/PotionExplosion";
+import Lose from "@/scenes/Lose";
+import Win from "@/scenes/Win";
 
 export default function SceneManager() {
-    const { scene } = useGame();
-    if ( scene === "Intro" ) return <Intro />;
-    //fallback in case im an idiot
-    return <div className="mc-scene p-6">Loading... (scene: {scene})</div>;
-}
+  const { scene } = useGame();
 
-// Hooking this back when when everything works
-// export default function SceneManager() {
-//     const { scene } = useGame();
-//     return (
-//         <div className="mx-auto max-w-6xl px-4 py-6">
-//             {scene === "Intro" && <Intro />}
-//             {scene === "PotionVigor" && <PotionVigor />}
-//             {scene === "PotionHeal" && <PotionHeal />}
-//             {scene === "PotionExplosion" && <PotionExplosion />}
-//             {scene === "Lose" && <Lose />}
-//             {scene === "Win" && <Win />}
-//         </div>
-//     );
-// }
+  switch (scene) {
+    case "Intro":
+      return <Intro />;
+    case "PotionVigor":
+      return <PotionVigor />;
+    case "PotionHeal":
+      return <PotionHeal />;
+    case "PotionExplosion":
+      return <PotionExplosion />;
+    case "Lose":
+      return <Lose />;
+    case "Win":
+      return <Win />;
+    default:
+      return (
+        <div className="mc-scene p-6 text-center">
+          <p className="text-lg font-semibold text-red-400">
+            Unknown scene: {scene}
+          </p>
+        </div>
+      );
+  }
+}
 
