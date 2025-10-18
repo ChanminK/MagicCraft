@@ -5,6 +5,9 @@ It's time for your final exam of magic school: Potions!
 
 Brew three difficult potions within the time limit to pass.
 
+Honestly I should've built this in godot but OH WELL
+THIS IS ANOTHER VERY BAD PROJECT 
+
 Another
 ![S](https://img.shields.io/badge/S-blue?style=for-the-badge)
 ![i](https://img.shields.io/badge/i-red?style=for-the-badge)
