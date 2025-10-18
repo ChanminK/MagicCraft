@@ -18,6 +18,12 @@ Project!
 
 Check out the demo link at the top right try out the project! 
 
+__________________________________________________________________________
+DEMO VID:
+![Demo](assets/demovid.gif)
+__________________________________________________________________________
+
+
 Tech Stack:
 React + TypeScript – core UI logic
 Vite – bundler & dev server
@@ -28,7 +34,6 @@ localStorage – saving progress
 Node.js – build/runtime environment
 Vercel – deployment hosting
 
-Psst...
 <details><summary>hmmmm....</summary>
 What if everything exploded?
 </details>
