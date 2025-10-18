@@ -1,29 +1,43 @@
 // INGREDIENT LIST - ID FOR EACH IS HERE
 
+export type IngredientCategory = "Buff" | "Heal" | "Attack";
+
+export type Ingredient = {
+  id: string;
+  name: string;
+  img: string;
+  category: IngredientCategory;
+};
+
+const I = (id: string, name: string, img: string, category: IngredientCategory): Ingredient => ({
+  id, name, img, category
+});
+
+
 import sprites from "./sprites.manifest";
 
-export const INGREDIENTS = [
+export const INGREDIENTS: readonly Ingredient[] = [
   // Buff stuff
-  { id: "gamblers-vigor", name: "Gambler's Vigor", img: sprites.ingredients["gamblers-vigor"], cat: "Buff" },
-  { id: "inspirational-quote", name: "Inspirational Quote", img: sprites.ingredients["inspirational-quote"], cat: "Buff" },
-  { id: "ragebaiter-jam", name: "Ragebaiter Jam", img: sprites.ingredients["ragebaiter-jam"], cat: "Buff" },
-  { id: "unicorn-horn", name: "Unicorn Horn", img: sprites.ingredients["unicorn-horn"], cat: "Buff" },
-  { id: "pixie-dust", name: "Pixie Dust", img: sprites.ingredients["pixie-dust"], cat: "Buff" },
-  { id: "writers-block", name: "Writer's Block", img: sprites.ingredients["writers-block"], cat: "Buff" },
+  I("gamblers-vigor", "Gambler's Vigor", sprites.ingredients["gamblers-vigor"], "Buff"),
+  I("inspirational-quote", "Inspirational Quote", sprites.ingredients["inspirational-quote"], "Buff"),
+  I("ragebaiter-jam", "Ragebaiter Jam", sprites.ingredients["ragebaiter-jam"], "Buff"),
+  I("unicorn-horn", "Unicorn Horn", sprites.ingredients["unicorn-horn"], "Buff"),
+  I("pixie-dust", "Pixie Dust", sprites.ingredients["pixie-dust"], "Buff"),
+  I("writers-block", "Writer's Block", sprites.ingredients["writers-block"], "Buff"),
 
-  // Heal stuff
-  { id: "saints-drink", name: "Saint's Drink", img: sprites.ingredients["saints-drink"], cat: "Heal" },
-  { id: "time-watch", name: "Time (Watch)", img: sprites.ingredients["time-watch"], cat: "Heal" },
-  { id: "grandmas-lasagna", name: "Grandma's Lasagna", img: sprites.ingredients["grandmas-lasagna"], cat: "Heal" },
-  { id: "magical-wand", name: "Magical Wand", img: sprites.ingredients["magical-wand"], cat: "Heal" },
-  { id: "toads-tongue", name: "Toad's Tongue", img: sprites.ingredients["toads-tongue"], cat: "Heal" },
-  { id: "angels-feather", name: "Angel's Feather", img: sprites.ingredients["angels-feather"], cat: "Heal" },
+  // Heal stff
+  I("saints-drink", "Saint's Drink", sprites.ingredients["saints-drink"], "Heal"),
+  I("time-watch", "Time (Watch)", sprites.ingredients["time-watch"], "Heal"),
+  I("grandmas-lasagna", "Grandma's Lasagna", sprites.ingredients["grandmas-lasagna"], "Heal"),
+  I("magical-wand", "Magical Wand", sprites.ingredients["magical-wand"], "Heal"),
+  I("toads-tongue", "Toad's Tongue", sprites.ingredients["toads-tongue"], "Heal"),
+  I("angels-feather", "Angel's Feather", sprites.ingredients["angels-feather"], "Heal"),
 
-  // Attack stuff
-  { id: "c4", name: "C4", img: sprites.ingredients["c4"], cat: "Attack" },
-  { id: "angry-moss", name: "Angry Moss", img: sprites.ingredients["angry-moss"], cat: "Attack" },
-  { id: "fahhhh-jar", name: "FAHHHH", img: sprites.ingredients["fahhhh-jar"], cat: "Attack" },
-  { id: "dragons-tooth", name: "Dragon's Tooth", img: sprites.ingredients["dragons-tooth"], cat: "Attack" },
-  { id: "cursed-orb", name: "Cursed Orb", img: sprites.ingredients["cursed-orb"], cat: "Attack" },
-  { id: "crystalized-thunder", name: "Crystalized Thunder", img: sprites.ingredients["crystalized-thunder"], cat: "Attack" },
-] as const;
+  // Attack
+  I("c4", "C4", sprites.ingredients["c4"], "Attack"),
+  I("angry-moss", "Angry Moss", sprites.ingredients["angry-moss"], "Attack"),
+  I("fahhhh-jar", "FAHHHH", sprites.ingredients["fahhhh-jar"], "Attack"),
+  I("dragons-tooth", "Dragon's Tooth", sprites.ingredients["dragons-tooth"], "Attack"),
+  I("cursed-orb", "Cursed Orb", sprites.ingredients["cursed-orb"], "Attack"),
+  I("crystalized-thunder", "Crystalized Thunder", sprites.ingredients["crystalized-thunder"], "Attack"),
+];

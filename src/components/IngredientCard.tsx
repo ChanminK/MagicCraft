@@ -1,11 +1,9 @@
-import React from "react";
 import type { Ingredient } from "@/data/ingredients";
 
-export default function IngredientCard({ ing }: { ing: Ingredient }) {
+export default function IngredientCard({ item }: { item: Ingredient }) {
     return (
-    <button className="h-28 border rounded-lg bg-slate-800/40 hover:bg-slate-800 transition flex flex-col items-center justify-center">
-        <div className="text-xl mb-1">{ing.emoji ?? "🧪"}</div>
-        <div className="text-xs opacity-80 text-center px-2">{ing.name}</div>
-    </button>
+    <div className="flex items-center justify-center">
+      <img src={item.img} alt={item.name} className="w-20 h-20 object-contain image-pixelated" />
+    </div>
     );
 }
