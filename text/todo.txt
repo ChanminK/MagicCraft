@@ -1,4 +1,5 @@
 GET A DEMOVID INTO THE ASSETS
+    turns out i don't since its on a website easily accesable
 
 OKAY DRAWING THE STUFF WOULD TAKE TOO LONG BC IM PRESSED FOR TIME
 DRAWING AND GETTING THE SPRITES IN ON MONDAY
@@ -26,7 +27,7 @@ IF I HAVE TIME GO BACK AND RE-EDIT SFX FOR DEADTIME - GET THROW EDITED AND IN AS
 I swear I need to make a yt backend plugin or smth I swear
 But then again youtube is so very stingy on doing that stuff...
 
-PNG (Check folder)
+PNGS
     ENVIRONMENT - essentially background pngs and such 
         background.png               # castle/dungeon wall
         cauldron_1.png               # idle pot

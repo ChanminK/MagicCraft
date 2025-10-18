@@ -1,26 +1,53 @@
-import { Howl } from "howler"; // WHY DOES THIS ALSO HAVE MODERATE SECURITY VULNERABILITIES
-import sfx from "@/data/sfx.manifest";
+import { Howl, Howler } from "howler"; // WHY DOES THIS ALSO HAVE MODERATE SECURITY VULNERABILITIES
+import sfx, {type SfxKey } from "@/data/sfx.manifest";
 
 
-type SoundMap = Record<string, Howl>;
-const sounds: SoundMap = {};
+let unlocked = false;
+const sounds: Partial<Record<SfxKey, Howl>> = {};
 
+export function unlockAudio() {
+  if (unlocked) return;
+  try {
+    const beep = new Howl({ src: ["/assets/sfx/coinflip.mp3"], volume: 0, preload: false });
+    beep.play();
+  } catch {}
+  unlocked = true;
+}
 
-export function loadAllSfx() {
-    Object.entries(sfx).forEach(([key, { src, volume = 1 }]) => {
-        if (!sounds[key]) {
-            sounds[key] = new Howl({ src: [src], volume });
-        }
+export function setMasterVolume(vol: number) {
+  Howler.volume(Math.max(0, Math.min(1, vol)));
+}
+
+export function getSound(key: SfxKey): Howl {
+  if (!sounds[key]) {
+    const def = sfx[key];
+    if (!def) throw new Error(`SFX key not found: ${key}`);
+    sounds[key] = new Howl({
+      src: [def.src],
+      volume: def.volume ?? 1,
+      preload: true,
+      html5: false,
     });
+  }
+  return sounds[key]!;
 }
 
-
-export function playSfx(key: keyof typeof sfx) {
-    if (!sounds[key]) loadAllSfx();
-    sounds[key].play();
+export function playSfx(key: SfxKey) {
+    try {
+        const h = getSound(key);
+        h.play();
+    } catch (e) {
+        console.warn("playSfx failed:", key, e);
+    }
 }
 
+export function stopSfx(key: SfxKey) {
+  try {
+    const h = sounds[key];
+    h?.stop();
+  } catch {}
+}
 
 export function stopAllSfx() {
-    Object.values(sounds).forEach((h) => h.stop());
+    Howler.stop();
 }

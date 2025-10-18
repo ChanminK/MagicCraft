@@ -13,17 +13,19 @@ Another
 ![e](https://img.shields.io/badge/e-green?style=for-the-badge)
 Project!
 
-Check out the demo link at the top right try out the project! (Or right here below: )
-
-__________________________________________________________________________
-DEMO VID:
-![Demo](assets/demovid.gif)
-__________________________________________________________________________
+Check out the demo link at the top right try out the project! 
 
 Tech Stack:
-
+React + TypeScript – core UI logic
+Vite – bundler & dev server
+Tailwind CSS – styling / layout
+Howler.js – sound effects
+React Context – game state management
+localStorage – saving progress
+Node.js – build/runtime environment
+Vercel – deployment hosting
 
 Psst...
 <details><summary>hmmmm....</summary>
-Maybe if you add C4, FAH, and ragebait jam, something will happen?
+What if everything exploded?
 </details>

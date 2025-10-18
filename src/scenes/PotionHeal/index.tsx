@@ -71,7 +71,7 @@ export default function PotionHeal() {
 
         <ControlsHUD timer={timer} />
 
-        <TeacherDialog>
+        <TeacherDialog portrait={allDone ? "drink" : "huh"}>
           {allDone
             ? "Color restored. Heart mended. Onward to the finale."
             : current
@@ -80,7 +80,7 @@ export default function PotionHeal() {
         </TeacherDialog>
       </div>
 
-      <IngredientGrid />
+      <IngredientGrid category="Heal" />
     </div>
   );
 }

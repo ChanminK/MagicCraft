@@ -88,7 +88,6 @@ export default function PotionExplosion() {
         </div>
 
         <div className="mt-3 flex flex-wrap gap-2">
-          {/* safe/too-fast buttons simulate speed threshold. FOR NOW */}
           <button className="mc-btn" onClick={() => doAction("lower-c4-slow")}>
             Lower C4 (safe)
           </button>
@@ -121,7 +120,7 @@ export default function PotionExplosion() {
 
         <ControlsHUD timer={timer} />
 
-        <TeacherDialog>
+        <TeacherDialog portrait={allDone ? "suprise" : "throw"}>
           {allDone
             ? "Explosion controlled. Remarkably tidy, actually."
             : current
@@ -130,7 +129,7 @@ export default function PotionExplosion() {
         </TeacherDialog>
       </div>
 
-      <IngredientGrid />
+      <IngredientGrid category="Attack" />
     </div>
   );
 }

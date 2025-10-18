@@ -1,37 +1,56 @@
-import React, { useState } from "react";
-import { shelves } from "@/data/shelves";
-import IngredientCard from "@/components/IngredientCard";
+import { useState } from "react";
+import sprites from "@/data/sprites.manifest";
+import { INGREDIENTS } from "@/data/ingredients";
 
-export default function IngredientGrid() {
-    const categories = Object.keys(shelves) as Array<keyof typeof shelves>;
-    const [catIdx, setCatIdx] = useState(0);
-    const [pageIdx, setPageIdx] = useState(0);
-    const cat = categories[catIdx];
-    const pages = shelves[cat];
+export default function IngredientGrid({ category }: { category: "Buff" | "Heal" | "Attack" }) {
+  const all = INGREDIENTS.filter((i) => i.cat === category);
+  const [page, setPage] = useState(0);
+  const pages = Math.max(1, Math.ceil(all.length / 6));
+  const items = all.slice(page * 6, page * 6 + 6);
 
-    const page = pages[pageIdx] ?? [];
+  return (
+    <div className="relative w-[420px]">
+      {/* Aspect-ratio box that reserves height */}
+      <div className="relative w-full aspect-[2/1]">
+        {/* Shelf as background */}
+        <img src={sprites.shelf} alt="shelf" className="absolute inset-0 w-full h-full object-contain image-pixelated" />
 
-    return (
-        <div className="w-[360px]">
-            <div className="flex items-center justify-between mb-2">
-                <button className="px-2 py-1 border rounded" onClick={() => setCatIdx((c) => (c - 1 + categories.length) % categories.length)}>
-                    ◀ Prev Group
-                </button>
-                <div className="text-sm opacity-80">{cat}</div>
-                <button className="px-2 py-1 border rounded" onClick={() => setCatIdx((c) => (c + 1) % categories.length)}>
-                    Next Group ▶
-                </button>
+        {/* 2x3 overlay grid */}
+        <div className="absolute inset-0 grid grid-cols-3 grid-rows-2 gap-x-6 gap-y-6 p-6">
+          {items.map((it) => (
+            <div key={it.id} className="flex items-center justify-center">
+              <img
+                src={it.img}
+                alt={it.name}
+                className="w-20 h-20 object-contain image-pixelated"
+              />
             </div>
-            <div className="grid grid-cols-2 gap-3">
-                {page.map((ing) => (
-                    <IngredientCard key={ing.id} ing={ing} />
-                ))}
-            </div>
-            <div className="flex items-center justify-between mt-3">
-                <button className="px-2 py-1 border rounded" onClick={() => setPageIdx((p) => Math.max(0, p - 1))}>Prev</button>
-                <div className="text-xs opacity-70">Page {pageIdx + 1} / {pages.length}</div>
-                <button className="px-2 py-1 border rounded" onClick={() => setPageIdx((p) => Math.min(pages.length - 1, p + 1))}>Next</button>
-            </div>
+          ))}
         </div>
-    );
+      </div>
+
+      {/* Pager */}
+      {pages > 1 && (
+        <div className="mt-2 flex items-center justify-between">
+          <button
+            className="mc-btn"
+            disabled={page === 0}
+            onClick={() => setPage((p) => Math.max(0, p - 1))}
+          >
+            ◀ Prev
+          </button>
+          <span className="text-xs opacity-70">
+            {page + 1}/{pages} — {category}
+          </span>
+          <button
+            className="mc-btn"
+            disabled={page >= pages - 1}
+            onClick={() => setPage((p) => Math.min(pages - 1, p + 1))}
+          >
+            Next ▶
+          </button>
+        </div>
+      )}
+    </div>
+  );
 }

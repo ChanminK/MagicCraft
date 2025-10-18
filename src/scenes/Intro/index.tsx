@@ -3,7 +3,7 @@
 import { useEffect, useMemo, useState } from "react";
 import { useGame } from "@/state/gameState";
 import sprites from "@/data/sprites.manifest";
-import { playSfx } from "@/systems/audio";
+import { playSfx, unlockAudio } from "@/systems/audio";
 import { INTRO_SCRIPT, type IntroLine } from "./script";
 
 export default function Intro() {
@@ -20,6 +20,7 @@ export default function Intro() {
     }, [line]);
 
     const handleNext = () => {
+        unlockAudio();
         if (!line) return;
         if (line.gotoScene) {
             setScene(line.gotoScene);

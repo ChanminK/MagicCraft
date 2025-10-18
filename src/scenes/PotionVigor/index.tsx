@@ -40,45 +40,39 @@ export default function PotionVigor() {
 
     const allDone = stepIndex >= VIGOR_STEPS.length;
 
-return (
-    <div className="mc-scene mc-fade-in grid grid-cols-[1fr_360px] gap-6">
-      <div>
-        <h2 className="text-xl font-semibold mb-2">Potion of Vigor</h2>
+  return (
+      <div className="mc-scene mc-fade-in grid grid-cols-[1fr_360px] gap-6">
+        <div>
+          <h2 className="text-xl font-semibold mb-2">Potion of Vigor</h2>
 
-        <div className="relative">
-          <Cauldron bubbleTone="green" />
+          <div className="relative">
+            <Cauldron bubbleTone="green" />
+          </div>
+
+          <div className="mt-3 flex flex-wrap gap-2">
+            <button className="mc-btn" onClick={() => doAction("flip-coin")}>Flip Coin</button>
+            <button className="mc-btn" onClick={() => doAction("dip-quote")}>Dip Quote</button>
+            <button className="mc-btn" onClick={() => doAction("drop-jam")}>Drop Jam</button>
+
+            {allDone && (
+              <button className="mc-btn" onClick={() => setScene("PotionHeal")}>
+                Done ▶
+              </button>
+            )}
+          </div>
+
+          <ControlsHUD timer={timer} />
+
+          <TeacherDialog portrait={allDone ? "vigor" : "base"}>
+            {allDone
+              ? "Good—vigor achieved. Proceed when ready."
+              : current
+              ? `Step ${stepIndex + 1}/${VIGOR_STEPS.length}: ${current.label}`
+              : "Follow the steps precisely."}
+          </TeacherDialog>
         </div>
 
-        <div className="mt-3 flex flex-wrap gap-2">
-          <button className="mc-btn" onClick={() => doAction("flip-coin")}>
-            Flip Coin
-          </button>
-          <button className="mc-btn" onClick={() => doAction("dip-quote")}>
-            Dip Quote
-          </button>
-          <button className="mc-btn" onClick={() => doAction("drop-jam")}>
-            Drop Jam
-          </button>
-
-          {allDone && (
-            <button className="mc-btn" onClick={() => setScene("PotionHeal")}>
-              Done ▶
-            </button>
-          )}
-        </div>
-
-        <ControlsHUD timer={timer} />
-
-        <TeacherDialog>
-          {allDone
-            ? "Good—vigor achieved. Proceed when ready."
-            : current
-            ? `Step ${stepIndex + 1}/${VIGOR_STEPS.length}: ${current.label}`
-            : "Follow the steps precisely."}
-        </TeacherDialog>
-      </div>
-
-      <IngredientGrid />
+        <IngredientGrid category="Buff" />
     </div>
   );
 }
